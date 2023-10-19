@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         self.uic.pushButton_4.clicked.connect(self.delete_items)
         self.list = []
 
-        f = open("home_number.txt", "r")
+        f = open("1_home_number.txt", "r")
         self.home_number_list = f.read()
         for item in self.home_number_list:
             if item != "\n":
@@ -27,15 +27,15 @@ class MainWindow(QMainWindow):
         home_number = self.uic.lineEdit.text()
         self.uic.listWidget.addItem(f"home: {home_number}")
 
-        f = open("home_number.txt", "r")
+        f = open("1_home_number.txt", "r")
         home_number_list = f.read()
         print(home_number_list)
         if home_number_list == "":
-            f = open("home_number.txt", "a")
+            f = open("1_home_number.txt", "a")
             f.write(f"{home_number}")
             f.close()
         else:
-            f = open("home_number.txt", "a")
+            f = open("1_home_number.txt", "a")
             f.write(f"\n{home_number}")
             f.close()
         self.list.append(home_number)
@@ -52,7 +52,7 @@ class MainWindow(QMainWindow):
 
     def clear_all(self):
         self.uic.listWidget.clear()
-        a_file = open("home_number.txt", "w")
+        a_file = open("1_home_number.txt", "w")
         a_file.write("")
 
     def delete_items(self):
@@ -62,10 +62,10 @@ class MainWindow(QMainWindow):
         self.write_list()
 
     def write_list(self):
-        a_file = open("home_number.txt", "w")
+        a_file = open("1_home_number.txt", "w")
         a_file.write("")
         for i in self.list:
-            a_file = open("home_number.txt", "a")
+            a_file = open("1_home_number.txt", "a")
             a_file.write(f"{i}\n")
             a_file.close()
 
