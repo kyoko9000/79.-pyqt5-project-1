@@ -17,8 +17,8 @@
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>200</y>
+      <x>430</x>
+      <y>280</y>
       <width>261</width>
       <height>141</height>
      </rect>
@@ -33,7 +33,7 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>220</y>
+      <y>300</y>
       <width>271</width>
       <height>101</height>
      </rect>
@@ -45,6 +45,21 @@
     </property>
     <property name="text">
      <string>RadioButton</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>341</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>72</pointsize>
+     </font>
     </property>
    </widget>
   </widget>
