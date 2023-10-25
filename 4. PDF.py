@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         a = 28
         image = '1.jpg'
         self.uic.textEdit.setHtml(
-            f"<p>{a}</p>"
+            f"<p>{a}</p>\n"
             f"<p style='margin-left:200px;'><img src={image} width='300' height='300'></p>\n"
             "<p>22222222</p>"
         )
