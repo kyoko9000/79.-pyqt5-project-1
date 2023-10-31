@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         self.uic.textEdit.setHtml(
             f"<p>{a}</p>\n"
             f"<p style='margin-left:200px;'><img src={image} width='300' height='300'></p>\n"
-            "<p>22222222</p>"
+            "<p>this is test app</p>"
         )
 
     def printPDF(self):

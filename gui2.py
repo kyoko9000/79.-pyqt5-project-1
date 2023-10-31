@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(10, 10, 811, 441))
         font = QtGui.QFont()
-        font.setPointSize(28)
+        font.setPointSize(72)
         self.textEdit.setFont(font)
         self.textEdit.setObjectName("textEdit")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
