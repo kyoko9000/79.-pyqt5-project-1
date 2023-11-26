@@ -42,13 +42,13 @@ class Ui_MainWindow(object):
         self.lineEdit.setFont(font)
         self.lineEdit.setObjectName("lineEdit")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(580, 430, 191, 81))
+        self.pushButton_3.setGeometry(QtCore.QRect(580, 330, 191, 81))
         font = QtGui.QFont()
-        font.setPointSize(28)
+        font.setPointSize(24)
         self.pushButton_3.setFont(font)
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(570, 320, 211, 81))
+        self.pushButton_4.setGeometry(QtCore.QRect(580, 440, 191, 81))
         font = QtGui.QFont()
         font.setPointSize(28)
         self.pushButton_4.setFont(font)
@@ -70,8 +70,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton.setText(_translate("MainWindow", "Add items"))
         self.pushButton_2.setText(_translate("MainWindow", "Edit items"))
-        self.pushButton_3.setText(_translate("MainWindow", "Clear all"))
-        self.pushButton_4.setText(_translate("MainWindow", "Delete items"))
+        self.pushButton_3.setText(_translate("MainWindow", "Delete items"))
+        self.pushButton_4.setText(_translate("MainWindow", "Clear items"))
 
 
 if __name__ == "__main__":
