@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
 
         f = open("1_home_number.txt", "r")
         self.home_number_list = f.read()
-        print("hhhh", self.home_number_list)
+        # print("hhhh", self.home_number_list)
         for item in self.home_number_list:
             if item != "\n":
                 self.uic.listWidget.addItem(f"home: {item}")
@@ -54,6 +54,7 @@ class MainWindow(QMainWindow):
         a_file = open("1_home_number.txt", "w")
         a_file.write("")
         self.list = []
+        print(self.list)
 
     def write_list(self):
         a_file = open("1_home_number.txt", "w")
