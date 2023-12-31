@@ -5,18 +5,21 @@ from PyQt5.QtCore import QUrl
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 # pip install pyqt5
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout
-from gui2 import Ui_MainWindow
+from gui3 import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.web = None
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
-        self.uic.textEdit.hide()
+        self.uic.pushButton.clicked.connect(self.loadweb)
+
+    def loadweb(self):
         self.web = QWebEngineView()
         self.web.load(QUrl('https://www.google.com/'))
-        lay = QVBoxLayout(self.uic.centralwidget)
+        lay = QVBoxLayout(self.uic.frame)
         lay.addWidget(self.web)
 
 
