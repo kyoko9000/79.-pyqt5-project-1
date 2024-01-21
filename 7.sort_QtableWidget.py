@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         self.uic.pushButton_2.clicked.connect(self.decrease)
         self.uic.pushButton.clicked.connect(self.increase)
 
-        list1 = [2, 3, 1, 4]
+        list1 = [20, 3, 1, 4]
         list2 = [5, 6, 7, 8]
         for i in range(4):
             self.uic.tableWidget.setItem(i, 0, QTableWidgetItem(str(list1[i])))
