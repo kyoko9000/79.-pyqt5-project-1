@@ -15,11 +15,14 @@ class MainWindow(QMainWindow):
         self.uic.setupUi(self)
         self.uic.pushButton_2.clicked.connect(self.decrease)
         self.uic.pushButton.clicked.connect(self.increase)
+        self.uic.tableWidget.setSortingEnabled(True)
 
-        list1 = [20, 3, 1, 4]
-        list2 = [5, 6, 7, 8]
+        list1 = [20, 35, 1, 4]
+        list2 = [50, 6, 71, 8]
         for i in range(4):
-            self.uic.tableWidget.setItem(i, 0, QTableWidgetItem(str(list1[i])))
+            item = QTableWidgetItem()
+            item.setData(Qt.DisplayRole, int(list1[i]))
+            self.uic.tableWidget.setItem(i, 0, item)
             self.uic.tableWidget.setItem(i, 1, QTableWidgetItem(str(list2[i])))
 
     def decrease(self):
