@@ -22,7 +22,7 @@ class MyTableWidget(QTableWidget):
         # Kích hoạt chức năng kéo thả row
         self.verticalHeader().setSectionsMovable(True)
         self.verticalHeader().setDragDropMode(QAbstractItemView.InternalMove)
-        self.verticalHeader().setAcceptDrops(True)  # hi
+        self.verticalHeader().setAcceptDrops(True)
 
 
 if __name__ == '__main__':
