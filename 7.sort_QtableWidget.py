@@ -20,9 +20,11 @@ class MainWindow(QMainWindow):
         list1 = [20, 35, 1, 4]
         list2 = [50, 6, 71, 8]
         for i in range(4):
+            # set data at int
             item = QTableWidgetItem()
             item.setData(Qt.DisplayRole, int(list1[i]))
             self.uic.tableWidget.setItem(i, 0, item)
+            # set data at str
             self.uic.tableWidget.setItem(i, 1, QTableWidgetItem(str(list2[i])))
 
     def decrease(self):
