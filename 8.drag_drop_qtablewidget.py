@@ -14,10 +14,12 @@ class MainWindow(QMainWindow):
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
 
-        self.uic.pushButton.clicked.connect(self.set_drag_drop)
-        # self.uic.tableWidget.setSortingEnabled(True)
+        self.uic.pushButton.setText("drag column")
+        self.uic.pushButton_2.setText("drag row")
+        self.uic.tableWidget.setSortingEnabled(True)
 
-        self.uic.pushButton.setText("drag drop")
+        self.uic.pushButton.clicked.connect(self.set_drag_column)
+        self.uic.pushButton_2.clicked.connect(self.set_drag_row)
 
         # add data to QtableWidget
         list1 = [20, 35, 1, 4]
@@ -30,12 +32,13 @@ class MainWindow(QMainWindow):
             # set data at str
             self.uic.tableWidget.setItem(i, 1, QTableWidgetItem(str(list2[i])))
 
-    def set_drag_drop(self):
+    def set_drag_column(self):
         #Kích hoạt chức năng kéo thả column
         self.uic.tableWidget.horizontalHeader().setSectionsMovable(True)
         self.uic.tableWidget.horizontalHeader().setDragDropMode(QAbstractItemView.InternalMove)
         self.uic.tableWidget.horizontalHeader().setAcceptDrops(True)
 
+    def set_drag_row(self):
         # Kích hoạt chức năng kéo thả row
         self.uic.tableWidget.verticalHeader().setSectionsMovable(True)
         self.uic.tableWidget.verticalHeader().setDragDropMode(QAbstractItemView.InternalMove)
