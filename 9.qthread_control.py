@@ -1,19 +1,14 @@
 import sys
 import time
-
-import cv2
-import numpy as np
-from PyQt5.QtCore import Qt
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtCore import QThread, pyqtSignal
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 from gui3 import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
-    def __init__(self):  # Show GUI
+    def __init__(self):
         super().__init__()
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
@@ -60,6 +55,7 @@ class MainWindow(QMainWindow):
     def update_value(self):
         number = 2
         self.thread[1].update_data(number)
+
 
 class thread_section(QThread):
     signal = pyqtSignal(object)
