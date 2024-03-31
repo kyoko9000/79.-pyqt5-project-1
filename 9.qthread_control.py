@@ -43,6 +43,7 @@ class MainWindow(QMainWindow):
 
         self.uic.pushButton.clicked.connect(self.start_thread)
         self.Button1.clicked.connect(self.stop_thread)
+        self.Button.clicked.connect(self.update_value)
         self.thread = {}
 
     def start_thread(self):
@@ -56,29 +57,45 @@ class MainWindow(QMainWindow):
     def show_data(self, data):
         self.label.setText(str(data))
 
+    def update_value(self):
+        number = 2
+        self.thread[1].update_data(number)
 
 class thread_section(QThread):
     signal = pyqtSignal(object)
 
     def __init__(self, index):
+        self.i = 0
+        self.up = False
+        self.data = None
         self.stop = False
         self.index = index
         print("Starting threading: ", self.index)
         super().__init__()
 
     def run(self):
-        i = 0
         while True:
-            i += 1
+            self.i += 1
             time.sleep(1)
-            print(i)
-            self.signal.emit(i)
+            print(self.i)
+            self.signal.emit(self.i)
+
+            # update data
+            if self.up:
+                self.i = self.data
+                self.up = False
+            # stop program
             if self.stop:
                 break
 
     def stop_app(self):
         print("stop")
         self.stop = True
+
+    def update_data(self, data):
+        self.up = True
+        self.data = data
+        print("update", self.data)
 
 
 if __name__ == "__main__":
