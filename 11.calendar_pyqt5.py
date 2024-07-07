@@ -22,11 +22,11 @@ class MainWindow(QMainWindow):
 
     def show_date(self):
         # show day, mouth, year
-        print(self.calendar.selectedDate().getDate())
+        # print(self.calendar.selectedDate().getDate())
         # show day
-        print(self.calendar.selectedDate().day())
+        # print(self.calendar.selectedDate().day())
         # show mouth
-        print(self.calendar.selectedDate().month())
+        # print(self.calendar.selectedDate().month())
         # show year
         print(self.calendar.selectedDate().year())
 
@@ -35,14 +35,14 @@ class MainWindow(QMainWindow):
         # self.calendar.showToday()
 
         # show any day we choose
-        # date = QDate(2021, 5, 10)  # Thay đổi ngày và tháng tùy ý
+        # date = QDate(2021, 8, 10)  # Thay đổi ngày và tháng tùy ý
         # self.calendar.setSelectedDate(date)
 
         # show today
-        # self.calendar.setSelectedDate(QDate.currentDate())
+        self.calendar.setSelectedDate(QDate.currentDate())
 
         # print today
-        print(QDate.currentDate().getDate())
+        # print(QDate.currentDate().getDate())
 
 
 if __name__ == "__main__":
