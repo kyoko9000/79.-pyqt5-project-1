@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25b631b9-7a8a-4119-a0de-824ca0287dfd" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13.icon_pyqt5.py" beforeDir="false" afterPath="$PROJECT_DIR$/13.icon_pyqt5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,34 +48,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.10.rotate_image.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11.calendar_pyqt5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.12.pyqt5_resize.executor&quot;: &quot;Run&quot;,
-    &quot;Python.13.icon_pyqt5 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.13.icon_pyqt5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.13.shadow_pyqt5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.14.icon_name_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.print_review.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.web_view.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.sort_QtableWidget.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8.drag_drop_qtablewidget.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.qthread_control.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gui5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.uu.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/2.Python_projects/79.-pyqt5-project-1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.10.rotate_image.executor": "Run",
+    "Python.11.calendar_pyqt5.executor": "Run",
+    "Python.12.pyqt5_resize.executor": "Run",
+    "Python.13.icon_pyqt5 (1).executor": "Run",
+    "Python.13.icon_pyqt5.executor": "Run",
+    "Python.13.shadow_pyqt5.executor": "Run",
+    "Python.14.icon_name_list.executor": "Run",
+    "Python.5.print_review.executor": "Run",
+    "Python.6.web_view.executor": "Run",
+    "Python.7.sort_QtableWidget.executor": "Run",
+    "Python.8.drag_drop_qtablewidget.executor": "Run",
+    "Python.9.qthread_control.executor": "Run",
+    "Python.gui2.executor": "Run",
+    "Python.gui4.executor": "Run",
+    "Python.gui5.executor": "Run",
+    "Python.uu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/2.Python_projects/84.pyqt6",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.13.icon_pyqt5">
     <configuration name="12.pyqt5_resize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="79. pyqt5 project 1" />
@@ -189,10 +188,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1_main" />
       <item itemvalue="Python.12.pyqt5_resize" />
       <item itemvalue="Python.13.icon_pyqt5" />
       <item itemvalue="Python.14.icon_name_list" />
+      <item itemvalue="Python.1_main" />
       <item itemvalue="Python.gui5" />
     </list>
     <recent_temporary>
@@ -492,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730599815141</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update">
+      <option name="closed" value="true" />
+      <created>1731161350090</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731161350090</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
